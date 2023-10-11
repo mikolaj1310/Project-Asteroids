@@ -6,13 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="44c86ca6-686b-42fb-aacb-c19658975fe6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Asteroids/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Config/ShipParts/Cockpits/Cockpit1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Config/ShipParts/Cockpits/Cockpit1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/MainMenuScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/MainMenuScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipCockpit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipCockpit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Cockpits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Cockpits/Cockpit0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Cockpits/Cockpit0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Engines.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Guns.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Ship.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Ship.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Wings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Wings/ShipWing0.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Content/Prefabs/Ships/Wings/ShipWing0.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerDrilling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerDrilling.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/ShipAssembly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/ShipAssembly.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +37,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97436df440ca462884c5332c1d8ebbe7941e00/47/22905091/SerializedProperty.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipPart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipCockpit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Config/ShipWing.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,10 +73,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="66312">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="55612">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="66312" />
+      <option name="pid" value="55612" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -91,7 +97,8 @@
       <workItem from="1696177256083" duration="6279000" />
       <workItem from="1696686408009" duration="88000" />
       <workItem from="1696687538153" duration="5806000" />
-      <workItem from="1696901563204" duration="2230000" />
+      <workItem from="1696901563204" duration="5059000" />
+      <workItem from="1696964070052" duration="3706000" />
     </task>
     <servers />
   </component>

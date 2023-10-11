@@ -6,17 +6,17 @@ using UnityEngine;
 public class PlayerDrilling : MonoBehaviour
 {
     private Camera mainCamera;
-    [SerializeField]private Transform laserPoint;
-    [SerializeField]private LineRenderer laserLineRenderer;
-    [SerializeField]private LayerMask drillableLayer;
-    [SerializeField]private float drillStrength;
-    [SerializeField]private float drillRadious;
+    private Transform laserPoint;
+    [SerializeField] private LineRenderer laserLineRenderer;
+    [SerializeField] private LayerMask drillableLayer;
+    [SerializeField] private float drillStrength;
+    [SerializeField] private float drillRadious;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        mainCamera = Camera.main;
+        mainCamera = GameObject.FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class PlayerDrilling : MonoBehaviour
         var mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
         RaycastHit2D[] hits =
-            Physics2D.RaycastAll(laserPoint.position, (mousePos - laserPoint.position).normalized, 100f, drillableLayer);
+            Physics2D.RaycastAll(laserPoint.position, -(mousePos - laserPoint.position).normalized, 100f, drillableLayer);
         Vector2 firstPointHit = mousePos;
         Transform tileHit = null;
         float closestDistance = 10000000f;
@@ -83,6 +83,11 @@ public class PlayerDrilling : MonoBehaviour
     private void DisableLaser()
     {
         laserLineRenderer.enabled = false;
+    }
+
+    public void SetLaserPoint(Transform point)
+    {
+        laserPoint = point;
     }
     
 }
