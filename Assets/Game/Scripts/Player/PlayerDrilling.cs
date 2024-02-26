@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
+using System;
 using UnityEngine;
 
 public class PlayerDrilling : MonoBehaviour
 {
+    private PlayerInput playerInput;
     private Camera mainCamera;
     private Transform laserPoint;
     [SerializeField] private LineRenderer laserLineRenderer;
@@ -17,23 +16,25 @@ public class PlayerDrilling : MonoBehaviour
     void Start()
     {
         mainCamera = GameObject.FindObjectOfType<Camera>();
+        playerInput = gameObject.GetComponent<PlayerInput>();
+
+        playerInput.DrillingDownAction += EnableLaser;
+        playerInput.DrillingAction += UpdateLaser;
+        playerInput.DrillingUpAction += DisableLaser;
+    }
+
+    private void OnDestroy()
+    {
+        
+        playerInput.DrillingDownAction -= EnableLaser;
+        playerInput.DrillingAction -= UpdateLaser;
+        playerInput.DrillingUpAction -= DisableLaser;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            EnableLaser();
-        }
-        if (Input.GetMouseButton(0))
-        {
-            UpdateLaser();
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            DisableLaser();
-        }
+        
     }
 
     private void EnableLaser()

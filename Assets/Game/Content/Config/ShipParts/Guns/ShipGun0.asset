@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: ShipGun0
   m_EditorClassIdentifier: 
   prefab: {fileID: 1416489247235609528, guid: 4ec66ea49fa34744abb0889f3af1275f, type: 3}
+  projectile: {fileID: 9113852896385361919, guid: 9d648828e7f1faf42b17fffb33c1f9d0, type: 3}

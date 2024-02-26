@@ -7,10 +7,10 @@ using UnityEngine.Assertions;
 
 public class ShipAssembly : MonoBehaviour
 {
-    [SerializeField] private ShipCockpit cockpit;
-    [SerializeField] private List<ShipWing> wings;
-    [SerializeField] private ShipEngine engine;
-    [SerializeField] private List<ShipGun> guns;
+    [SerializeField] private ShipCockpitConfig cockpit;
+    [SerializeField] private List<ShipWingConfig> wings;
+    [SerializeField] private ShipEngineConfig engine;
+    [SerializeField] private List<ShipGunConfig> guns;
     
     [SerializeField] private Transform shipPivotPoint;
     private List<Transform> wingPivots;
@@ -20,25 +20,10 @@ public class ShipAssembly : MonoBehaviour
     private GameObject cockpitRef;
     private List<GameObject> wingRef = new List<GameObject>();
     private GameObject engineRef;
-    private List<GameObject> gunRef = new List<GameObject>();
-    private Transform laserPointRef;
-
-    private PlayerDrilling playerDrilling;
+    public List<GameObject> gunRef { get; private set; } = new List<GameObject>();
+    public Transform laserPointRef { get; private set; }
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerDrilling = transform.GetComponent<PlayerDrilling>();
-        AssembleShip();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void AssembleShip()
+    public void AssembleShip()
     {
         wingPivots = new List<Transform>();
         gunPivots = new List<Transform>();
@@ -50,7 +35,6 @@ public class ShipAssembly : MonoBehaviour
         gunPivots.Add(cockpitRef.transform.Find("GunR"));
         gunPivots.Add(cockpitRef.transform.Find("GunL"));
         laserPointRef = cockpitRef.transform.Find("LaserPoint");
-        playerDrilling.SetLaserPoint(laserPointRef);
         
         for (int i = 0; i < wings.Count; i++)
         {

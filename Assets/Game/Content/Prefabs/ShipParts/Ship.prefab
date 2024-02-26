@@ -197,6 +197,9 @@ GameObject:
   - component: {fileID: 9219887732047826088}
   - component: {fileID: 7482054339473724816}
   - component: {fileID: -1555766054080430715}
+  - component: {fileID: 7238905878836608015}
+  - component: {fileID: 2673884899072581331}
+  - component: {fileID: -8690722717625426042}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -326,10 +329,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4578b409c67acc34eb462ef7746dee27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  laserPoint: {fileID: 0}
   laserLineRenderer: {fileID: 0}
   drillableLayer:
     serializedVersion: 2
     m_Bits: 0
   drillStrength: 0
   drillRadious: 0
+--- !u!114 &7238905878836608015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552770951931552305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421e77f5fd1f2b44781dacdb8426a553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2673884899072581331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552770951931552305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9571cd01e97840c479f099113a052b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8690722717625426042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552770951931552305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7e78c27d8856f469ae34b417f01180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
